@@ -5,21 +5,21 @@
 class Gogo < Formula
   desc "Streaming LLM CLI with multi-provider support"
   homepage "https://github.com/sirsjg/gogo"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sirsjg/gogo/releases/download/v0.1.0/gogo_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "7396bdaf5882a4df00eeb7010cae6fab423ccb0b9adb332ffdc512e0c77d4eed"
+      url "https://github.com/sirsjg/gogo/releases/download/v0.2.0/gogo_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "275519a5316d9fb72df7744ee85568ced5abf8b29e32ed5b48c587b30820c75a"
 
       def install
         bin.install "gogo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sirsjg/gogo/releases/download/v0.1.0/gogo_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "072f26a574e6f848fd9ef27bb0d5e5f89b6ef2f78bb2c8605b74e07f84b9cad1"
+      url "https://github.com/sirsjg/gogo/releases/download/v0.2.0/gogo_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "12b42848b32d8174d186af5de661f4d8c7c22fcb8b887a7aa106bfc369674b5e"
 
       def install
         bin.install "gogo"
@@ -29,15 +29,15 @@ class Gogo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirsjg/gogo/releases/download/v0.1.0/gogo_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "422cf79917bd00cf12fb54655ded807aca78d06eeb1b4ffd78b1df53d214e305"
+      url "https://github.com/sirsjg/gogo/releases/download/v0.2.0/gogo_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "d54bc148a702d51c04228c70297618df974e402eceda206b35ae3bb0fab36004"
       def install
         bin.install "gogo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirsjg/gogo/releases/download/v0.1.0/gogo_0.1.0_Linux_arm64.tar.gz"
-      sha256 "6cfa157978b45ac4d5d6b8f0034ad249de5825694d5154cc09e063027aaacbe7"
+      url "https://github.com/sirsjg/gogo/releases/download/v0.2.0/gogo_0.2.0_Linux_arm64.tar.gz"
+      sha256 "8cb4c9a79891fe58075e3c3b88848e41f51a10c286af3be4e7f008dd4e7b0aac"
       def install
         bin.install "gogo"
       end
